@@ -13,3 +13,10 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next()
 })
+
+//Connect to mongodb
+const MongoClient = require('mongodb').MongoClient
+let db
+MongoClient.connect('mongodb+srv://procoderwalid:yakudima081aminu@cluster0.rqabd.mongodb.net/test', (err, client)=>{
+    db = client.db('webstore')
+})
