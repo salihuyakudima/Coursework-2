@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 //Connect to mongodb
 const MongoClient = require('mongodb').MongoClient
 let db
-MongoClient.connect('mongodb+srv://procoderwalid:yakudima081aminu@cluster0.rqabd.mongodb.net/test', (err, client)=>{
+MongoClient.connect('mongodb+srv://procoderwalid:khadijaaminu@cluster0.rqabd.mongodb.net', (err, client)=>{
     db = client.db('webstore')
 })
 
